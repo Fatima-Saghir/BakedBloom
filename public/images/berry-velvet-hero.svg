@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="50%" stop-color="#F9EFE6" />
+      <stop offset="100%" stop-color="#F3E2D4" />
+    </linearGradient>
+    
+    <linearGradient id="standGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F0EAE1" />
+      <stop offset="100%" stop-color="#D9CFC4" />
+    </linearGradient>
+
+    <linearGradient id="cakeSponge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C2494E" />
+      <stop offset="50%" stop-color="#D95C62" />
+      <stop offset="100%" stop-color="#B23B40" />
+    </linearGradient>
+
+    <linearGradient id="frostingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FFF6F2" />
+      <stop offset="100%" stop-color="#FDE8E1" />
+    </linearGradient>
+
+    <linearGradient id="berryCompote" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B1E28" />
+      <stop offset="100%" stop-color="#540D15" />
+    </linearGradient>
+
+    <linearGradient id="goldDrizzle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6D365" />
+      <stop offset="100%" stop-color="#FDA085" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#4A342B" flood-opacity="0.16" />
+    </filter>
+    <filter id="berryGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#7B1E28" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Warm Canvas Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+
+  <!-- Ambient background glow & confetti -->
+  <circle cx="400" cy="300" r="260" fill="#FDEEE6" opacity="0.7" />
+  <circle cx="200" cy="160" r="14" fill="#F9DED7" opacity="0.6" />
+  <circle cx="620" cy="180" r="18" fill="#FEE5D7" opacity="0.7" />
+  <circle cx="680" cy="380" r="12" fill="#EBDDCB" opacity="0.5" />
+  <circle cx="140" cy="400" r="16" fill="#FAD4C0" opacity="0.5" />
+
+  <!-- Marble & Gold Cake Pedestal Stand -->
+  <g filter="url(#softShadow)">
+    <!-- Base Plate -->
+    <ellipse cx="400" cy="510" rx="170" ry="24" fill="url(#standGrad)" stroke="#E5DACD" stroke-width="2" />
+    <!-- Stand Pillar -->
+    <path d="M380 430 Q400 470 380 505 L420 505 Q400 470 420 430 Z" fill="url(#standGrad)" stroke="#DFD5C7" />
+    <ellipse cx="400" cy="505" rx="35" ry="7" fill="#D2C5B4" />
+    <!-- Golden Pedestal Ring -->
+    <ellipse cx="400" cy="430" rx="42" ry="8" fill="url(#goldDrizzle)" />
+    <!-- Top Platter -->
+    <ellipse cx="400" cy="420" rx="230" ry="34" fill="url(#standGrad)" stroke="#DFD4C6" stroke-width="3" />
+    <ellipse cx="400" cy="417" rx="222" ry="30" fill="#FFFDFB" />
+  </g>
+
+  <!-- 3-Tier Layered Berry Velvet Cake Body -->
+  <g filter="url(#softShadow)">
+    <!-- Tier 1: Bottom Layer -->
+    <!-- Sponge -->
+    <path d="M220 330 C220 330 220 390 220 390 C220 415 300 425 400 425 C500 425 580 415 580 390 C580 390 580 330 580 330 Z" fill="url(#cakeSponge)" />
+    <!-- Silky Mascarpone Frosting Coating -->
+    <path d="M218 315 C218 315 218 385 218 385 C218 412 300 422 400 422 C500 422 582 412 582 385 C582 385 582 315 582 315 Z" fill="url(#frostingGrad)" />
+    <!-- Frosting Top Surface -->
+    <ellipse cx="400" cy="315" rx="182" ry="26" fill="#FFFDF9" stroke="#F6E7DF" stroke-width="1.5" />
+    
+    <!-- Berry Drip Cascades on Bottom Tier -->
+    <path d="M218 325 Q235 365 242 340 Q252 385 260 330 Q275 395 285 345 Q310 380 325 325 Q355 400 370 335 Q410 395 435 330 Q460 410 475 340 Q500 385 520 330 Q545 375 560 335 Q575 360 582 325 L582 315 C582 315 500 335 400 335 C300 335 218 315 218 315 Z" fill="url(#berryCompote)" />
+
+    <!-- Tier 2: Top Tier -->
+    <path d="M270 230 C270 230 270 300 270 300 C270 322 330 332 400 332 C470 332 530 322 530 300 C530 300 530 230 530 230 Z" fill="url(#frostingGrad)" />
+    <ellipse cx="400" cy="230" rx="130" ry="20" fill="#FFFDF9" stroke="#F6E7DF" stroke-width="1.5" />
+
+    <!-- Berry Drip Cascades on Top Tier -->
+    <path d="M270 238 Q285 275 292 250 Q305 290 315 245 Q335 285 348 240 Q380 295 395 242 Q425 290 445 240 Q470 285 485 245 Q510 280 522 248 L530 238 L530 230 C530 230 470 245 400 245 C330 245 270 230 270 230 Z" fill="url(#berryCompote)" />
+  </g>
+
+  <!-- Fresh Artisanal Berry Crown & Whipped Dollops -->
+  <g filter="url(#berryGlow)">
+    <!-- Whipped Cream Rosettes -->
+    <ellipse cx="320" cy="225" rx="16" ry="12" fill="#FFFFFF" stroke="#F8ECE6" />
+    <ellipse cx="360" cy="220" rx="17" ry="13" fill="#FFFFFF" stroke="#F8ECE6" />
+    <ellipse cx="400" cy="218" rx="18" ry="14" fill="#FFFFFF" stroke="#F8ECE6" />
+    <ellipse cx="440" cy="220" rx="17" ry="13" fill="#FFFFFF" stroke="#F8ECE6" />
+    <ellipse cx="480" cy="225" rx="16" ry="12" fill="#FFFFFF" stroke="#F8ECE6" />
+
+    <!-- Center Giant Ruby Strawberry -->
+    <path d="M395 160 C380 180 375 205 395 220 C410 225 425 210 425 190 C425 170 410 160 395 160 Z" fill="#C92A3E" />
+    <path d="M393 162 C383 178 380 198 393 210 C398 190 405 175 408 165 Z" fill="#E84855" opacity="0.7" />
+    <!-- Strawberry Seeds -->
+    <circle cx="390" cy="180" r="1.5" fill="#FFE57F" />
+    <circle cx="402" cy="178" r="1.5" fill="#FFE57F" />
+    <circle cx="412" cy="185" r="1.5" fill="#FFE57F" />
+    <circle cx="395" cy="195" r="1.5" fill="#FFE57F" />
+    <circle cx="406" cy="198" r="1.5" fill="#FFE57F" />
+    <circle cx="415" cy="196" r="1.5" fill="#FFE57F" />
+    <circle cx="400" cy="208" r="1.5" fill="#FFE57F" />
+    <!-- Strawberry Leaves -->
+    <path d="M395 160 C385 148 375 152 378 158 C385 158 392 159 395 160 Z" fill="#388E3C" />
+    <path d="M395 160 C400 145 410 148 406 156 C402 158 398 159 395 160 Z" fill="#4CAF50" />
+    <path d="M395 160 C392 142 398 142 396 152 Z" fill="#2E7D32" />
+
+    <!-- Fresh Blueberries -->
+    <circle cx="340" cy="225" r="14" fill="#2C3459" />
+    <circle cx="343" cy="223" r="12" fill="#3D4B82" />
+    <circle cx="342" cy="218" r="4" fill="#5C6EA8" opacity="0.6" />
+
+    <circle cx="460" cy="226" r="13" fill="#2C3459" />
+    <circle cx="462" cy="224" r="11" fill="#3D4B82" />
+    <circle cx="461" cy="220" r="3.5" fill="#5C6EA8" opacity="0.6" />
+
+    <circle cx="370" cy="232" r="11" fill="#2C3459" />
+    <circle cx="372" cy="230" r="9.5" fill="#3D4B82" />
+
+    <circle cx="430" cy="232" r="12" fill="#2C3459" />
+    <circle cx="432" cy="230" r="10.5" fill="#3D4B82" />
+
+    <!-- Raspberries -->
+    <!-- Left Raspberry -->
+    <g transform="translate(305, 215)">
+      <circle cx="8" cy="8" r="5" fill="#B71C1C" />
+      <circle cx="14" cy="6" r="4.5" fill="#C62828" />
+      <circle cx="18" cy="10" r="4.5" fill="#D32F2F" />
+      <circle cx="15" cy="15" r="4.5" fill="#C62828" />
+      <circle cx="9" cy="14" r="4.5" fill="#B71C1C" />
+      <circle cx="12" cy="10" r="4.5" fill="#E53935" />
+    </g>
+
+    <!-- Right Raspberry -->
+    <g transform="translate(470, 218)">
+      <circle cx="8" cy="8" r="5" fill="#B71C1C" />
+      <circle cx="14" cy="6" r="4.5" fill="#C62828" />
+      <circle cx="18" cy="10" r="4.5" fill="#D32F2F" />
+      <circle cx="15" cy="15" r="4.5" fill="#C62828" />
+      <circle cx="9" cy="14" r="4.5" fill="#B71C1C" />
+      <circle cx="12" cy="10" r="4.5" fill="#E53935" />
+    </g>
+  </g>
+
+  <!-- Mint Leaves Accent -->
+  <path d="M362 208 C345 198 348 185 362 188 C370 195 366 205 362 208 Z" fill="#43A047" />
+  <path d="M362 208 C354 200 355 194 362 190" stroke="#2E7D32" stroke-width="1" fill="none" />
+  
+  <path d="M435 208 C452 198 449 185 435 188 C427 195 431 205 435 208 Z" fill="#43A047" />
+
+  <!-- 24K Edible Gold Leaf Shimmer Accents -->
+  <g fill="url(#goldDrizzle)">
+    <polygon points="380,240 384,242 381,245 378,242" opacity="0.9" />
+    <polygon points="415,248 420,250 417,254 413,251" opacity="0.9" />
+    <polygon points="340,335 344,337 341,340 338,337" opacity="0.8" />
+    <polygon points="460,345 465,348 462,352 458,349" opacity="0.8" />
+    <!-- Sparkles -->
+    <path d="M250 200 Q250 210 240 210 Q250 210 250 220 Q250 210 260 210 Q250 210 250 200 Z" fill="#E5A93C" />
+    <path d="M550 190 Q550 200 540 200 Q550 200 550 210 Q550 200 560 200 Q550 200 550 190 Z" fill="#E5A93C" />
+    <path d="M600 300 Q600 308 592 308 Q600 308 600 316 Q600 308 608 308 Q600 308 600 300 Z" fill="#E5A93C" />
+  </g>
+
+  <!-- Elegant Brand Tag -->
+  <g transform="translate(290, 545)">
+    <rect width="220" height="34" rx="17" fill="#FFFFFF" opacity="0.95" stroke="#EFE3D3" stroke-width="1.5" />
+    <text x="110" y="21" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="13" font-weight="bold" fill="#34221A" letter-spacing="0.5">
+      BakedBloom Artisanal Signature
+    </text>
+  </g>
+</svg>

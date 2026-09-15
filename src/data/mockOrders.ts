@@ -1,0 +1,101 @@
+import { Order } from '../types';
+
+export const initialOrders: Order[] = [
+  {
+    id: 'BB-78291',
+    customer: {
+      fullName: 'Fatima Al-Zahra',
+      email: 'fatima@bakedbloom.com',
+      phone: '+1 (555) 234-5678',
+      address: '742 Evergreen Terrace, Apt 4B',
+      city: 'Bloomfield',
+      postalCode: '90210',
+      specialInstructions: 'Please leave with the concierge if not home',
+      deliveryDate: '2026-03-09',
+      deliveryTimeSlot: '2:00 PM - 5:00 PM',
+    },
+    items: [
+      {
+        id: 'item-1',
+        productId: 'cake-1',
+        name: 'Berry Bliss Velvet Cake',
+        price: 64.80,
+        originalPrice: 48.00,
+        image: 'https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=800&q=80',
+        category: 'Cakes',
+        quantity: 1,
+        selectedSize: '8" Classic (Serves 10-14)',
+        selectedFlavor: 'Strawberry Mascarpone',
+        customMessage: 'Happy Birthday Noor!',
+      },
+      {
+        id: 'item-2',
+        productId: 'cookie-1',
+        name: 'Brown Butter Triple Choc Chunk Cookies (6 pcs)',
+        price: 18.00,
+        originalPrice: 18.00,
+        image: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80',
+        category: 'Cookies',
+        quantity: 2,
+        selectedSize: 'Box of 6',
+      }
+    ],
+    subtotal: 100.80,
+    deliveryFee: 0.00, // Free over $50
+    discount: 10.08, // 10% coupon SWEET10 applied
+    total: 90.72,
+    deliveryMethod: 'Home Delivery',
+    paymentMethod: 'Online Payment',
+    paymentStatus: 'Paid',
+    status: 'Delivered',
+    createdAt: 'March 8, 2026, 11:30 AM',
+    estimatedDelivery: 'March 9, 2026, 3:30 PM',
+  },
+  {
+    id: 'BB-84920',
+    customer: {
+      fullName: 'Fatima Al-Zahra',
+      email: 'fatima@bakedbloom.com',
+      phone: '+1 (555) 234-5678',
+      address: '742 Evergreen Terrace, Apt 4B',
+      city: 'Bloomfield',
+      postalCode: '90210',
+      deliveryDate: '2026-03-10',
+      deliveryTimeSlot: '10:00 AM - 1:00 PM',
+    },
+    items: [
+      {
+        id: 'item-3',
+        productId: 'pastry-1',
+        name: 'Almond Frangipane Croissant (4 pcs)',
+        price: 18.50,
+        originalPrice: 18.50,
+        image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80',
+        category: 'Pastries',
+        quantity: 1,
+        selectedSize: 'Box of 4',
+      },
+      {
+        id: 'item-4',
+        productId: 'dessert-1',
+        name: 'Artisan Classic Tiramisu Tub',
+        price: 19.50,
+        originalPrice: 19.50,
+        image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80',
+        category: 'Desserts',
+        quantity: 1,
+        selectedSize: 'Standard (Serves 2-3)',
+      }
+    ],
+    subtotal: 38.00,
+    deliveryFee: 5.00,
+    discount: 0.00,
+    total: 43.00,
+    deliveryMethod: 'Home Delivery',
+    paymentMethod: 'Cash on Delivery',
+    paymentStatus: 'Pending COD',
+    status: 'Out for Delivery',
+    createdAt: 'March 9, 2026, 09:15 AM',
+    estimatedDelivery: 'March 10, 2026, 12:00 PM',
+  }
+];
